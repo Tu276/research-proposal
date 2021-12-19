@@ -1,15 +1,18 @@
 \section{Introduction}
 \label{sec:introduction}
 \subsection{Background}
-\paragraph{}Research on Fuel cells started in 1801 when British Chemist Humphry Davy was setting up experiments to assist him in separating several materials using voltaic piles. The experiments set the background for the development of fuel cells which Christian Friedrich Schönbein worked on in 1838. Sir William Grove was the first scientist to prove that reaction between hydrogen and oxygen produced electricity in 1939. He carried out experiments on water electrolysers and fuel cells using his background on electrolysis to come up with a reverse process to generate electricity. He succeeded in building a device that combined water and hydrogen to generate electricity. The new device was originally called a gas battery, but later was renamed the fuel cell.
-\paragraph{}The first operational fuel cell was developed by Charles Langer and Ludwig Mond. The duo developed a functional fuel cell, obtaining fuel capacity of 0.73V at 20A/m2. Francis Bacon advanced the Mond and Langer fuel cell in 1958, which was later used in the Apollo mission in 1969. Since then, the space agencies have been using fuel cells to power the space crafts and provide water for the astronauts.
+\paragraph{}As the world’s industries push the boundaries of optimization and efficiency, the exponential increase in computational ability and technology The automation of “higher-level” tasks that require human intellect is now possible. This headway brings unmanned autonomous vessels within the Maritime Industry closer to mass production. The practicality of autonomous vessels can only be achieved with constant awareness of the performance and operating state of machinery in the engine room (CBM).  Observations of industry practices display that industry experience in reliability is heavily based on trial-and-error test procedures. 
+
+\paragraph{}Most of the reliability research in industry still focuses on two distinct periods of the product life. The warranty period, where most of the failures are due to product malfunctions or quality related problems, and, wear-out period, where the failures are due excessive wear and use(1). Using sensors and logging software the condition of equipment is assessed as  frequently as needed, enabling efficient analysis of data that facilitates planning of predictive maintenance on-board vessels. 
+
 \begin{figure}
 \includegraphics{Figures/Figure3}
 \caption{Fuel Cell Structure
 \cite{pukrushpan_modeling_2003}}
 \end{figure}
 
-\paragraph{}With the current global challenge in the energy sector, there is an increasing need for power generation with minimal pollution and environmental degradation. As a way of mitigating environmental pollution and providing energy shortage routes, Fuel Cell technologies have been considered as elements of alternative energy systems. These technologies capitalize on high efficiencies (between 50–65 percent, Supramaniam, et al., 1999 \cite{ashby_fuel_nodate}) and low emissions.
+\paragraph{}The  electric motor is the most used device for conversion from electric to mechanical energy and is used for electric propulsion,  powering thrusters for station keeping, and different on-board equipment on hundreds of ships. Typically, 80-90 percent of the load installations will be electric motors.
+
 \paragraph{}Fuel cells are increasingly becoming a promising alternative to internal combustion engines (ICEs) and thus are considered for transportation (automotive, marine and aerospace) applications. They are also being considered for distributed power generation for residential homes and industries. Another promising use of FC stacks is for electricity storage in conjunction with electrolyzers and hydrogen accumulators.\cite{stefanopoulou_mechatronics_nodate}
 \paragraph{}Power generation from Fuel Cells (FC) necessitates the integration of chemical, fluid,
 mechanical, thermal, electrical, and electronic subsystems. This integration presents many
@@ -51,22 +54,26 @@ $$2H_{2}+ O_{2} \rightarrow 2H_{2}O $$
 \end{equation}
 
 \subsection{Problem statement}
-\paragraph{}As a measure to curb pollution due to the industrialization and transportation sectors, world governments are turning to alternative sources of energy. These alternative sources of energy should drastically reduce the pollution rates by cutting down emissions. Fuel cell technology is one such example of alternative sources of energy. A fuel cell uses the chemical energy of hydrogen or other fuels to cleanly and efficiently produce electricity. Moreover, fuel cells can operate at higher efficiencies than combustion engines and can convert the chemical energy in the fuel directly to electrical energy with efficiencies capable of exceeding 60\%. Fuel cells have lower or zero emissions compared to combustion engines.
-\paragraph{}The various departments of energy, however,  have to work closely with national laboratories, universities, and industry partners to overcome critical technical barriers to fuel cell development. These barriers are cost, performance, and durability which are still key challenges in the fuel cell industry. 
-\paragraph{}This design proposal seeks to provide a solution to improving the fuel cell’s performance by improving the robustness and efficiency of the Fuel Cell stack system for real world conditions through precise control of reactant flow and pressure, stack temperature, and membrane humidity\cite{stefanopoulou_mechatronics_nodate}.
+\paragraph{} Out of 880 accidental errors in ship related incidents 62% are attributed to human failure; of this, 22% are eq% shipboard related operations1. The adversuipment failure and 72e and often negative impacts of these cases are spread throughout the financial, safety and environmental aspects of the shipping industry. 
+Engine room failures are caused by a majority of three ways, either by:  Natural mechanical failure, Electrical failure of components and whole systems, Human negligence, and poor competency in engine room procedures, Inaccurate diagnosis, and sub-par prevention measures.
+\paragraph{}These accidents are more notably recognized when they result in internationally felt effects such as oil spills damaging large swathes of marine ecosystems or when loss of life of crew members is realised. But with greater significance but less spoken of - the loss of millions in profits in maintenance and shipping costs incurred to the vessel's owner that would otherwise have been used more productively.
+
+\paragraph{}While it is impractical to try and eliminate accidents in the engine room,this design proposal seeks to provide a solution to improving efficiency and mitigating downtime by implementing strategies to reduce human through the automation of engine room condition monitoring\cite{stefanopoulou_mechatronics_nodate}.
 \subsection{Objectives}
 \subsubsection{Main Objectives}
 \begin{enumerate}
-\item To develop a Hydrogen Fuel cell control system.
+\item To develop monitor the health of ship motors improving reliability and preventing downtime in ships.
+
 \end{enumerate}
 \subsubsection{Specific Objectives}
 \begin{enumerate}
-\item To design and additively manufacture a PEMFC prototype which can be adapted for domestic use and scaled for industrial applications.
-\item To design and fabricate supporting control electronics for the Hydrogen Fuel Cell.
-\item To achieve precise control of reactant flow and pressure, stack temperature, and membrane humidity.
-\item To simulate and test alternative control strategies for the Hydrogen fuel cell. 
+\item To develop a predictive maintenance algorithm for electric motors in ships.
+\item To model a modular framework onto which various equipment will be added to achieve predictive maintenance in the entire ship's engine room. 
+\item To design a product that has seamless integration on multiple motors
 \end{enumerate}
 \subsection{Justification of the study}
-\paragraph{}Additive manufacturing offers the ability to produce intricate products and parts with lower development costs, shorter lead times, less energy consumed during manufacturing as well as less material waste. This method can be used to manufacture delicate components such as the bipolar plates with elimination of the risks involved such as breakage of brittle graphene material during production.     
-\paragraph{}Precise control of reactant flow and pressure, stack temperature, and membrane humidity will increase the fuel cell’s robustness as well as efficiency \cite{stefanopoulou_mechatronics_nodate}\cite{gonzatti_proposal_2017}\cite{thanapalan_model_nodate}.
-\paragraph{}The goal of this research is to develop physic-based dynamic models of fuel cell systems and fuel processor systems and then apply multivariable control techniques to study their behavior. The analysis will give insight into the control design limitations and provide guidelines for the necessary controller structure and system re-design.
+\paragraph{}Electric motors serve as a critical component for any facility. However, electric motors can be prone to any number of issues that lead to motor faults and failures. Failures disrupt business operations, decrease productivity, and adversely impact a company’s bottom line.
+
+\paragraph{}The purpose of this project is to alert about problems occurring in the motor and trying to mitigate the risk of unexpected failure. A well planned predictive maintenance is the key to long life operation of motors. In ships unexpected failure causes downtime which deeply eats into profits.The traditional approach is to repair and replace equipment after a period of time but this cannot prevent downtime due to malfunctions, which put a halt to operations and incur massive losses. Advanced monitoring is implemented on parts that are about to break down and can be discovered in advance to accurately determine the time for repair and risk of unexpected shutdown can be prevented.
+ \cite{stefanopoulou_mechatronics_nodate}\cite{gonzatti_proposal_2017}\cite{thanapalan_model_nodate}.
+\paragraph{}  Although Reactive and preventive maintenance will always have a part in operations,Predictive maintenance is the next big step forward in the evolution of asset management. In fact, the ability to connect assets and feed information into a central system gives organizations the power to turn data into powerful insights and automatically take corrective, preventive or predictive action.
